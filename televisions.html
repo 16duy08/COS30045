@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Televisions | Appliance Energy Consumption Website</title>
+  <link rel="icon" href="assets/img/PowerIcon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <nav class="nav-inner" aria-label="Main">
+      <a class="logo" href="index.html">
+        <img src="assets/img/PowerIcon.png">
+        Appliance Energy
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="televisions.html" class="active">Televisions</a></li>
+        <li><a href="story.html">The Story</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Televisions</h1>
+    <p class="lead">Placeholder comparison of example television sizes and their typical power draw, followed by charts made in KNIME from the registry data.</p>
+    <div class="panel table-wrap">
+      <table>
+        <thead><tr><th>Screen size</th><th>Technology</th><th>Typical power (W)</th><th>kWh per year</th><th>Cost per year</th></tr></thead>
+        <tbody>
+          <tr><td>32 inch</td><td>LED</td><td class="num">30</td><td class="num">43.8</td><td class="num">$13.14</td></tr>
+          <tr><td>43 inch</td><td>LED</td><td class="num">55</td><td class="num">80.3</td><td class="num">$24.09</td></tr>
+          <tr><td>55 inch</td><td>LED</td><td class="num">85</td><td class="num">124.1</td><td class="num">$37.23</td></tr>
+          <tr><td>65 inch</td><td>OLED</td><td class="num">120</td><td class="num">175.2</td><td class="num">$52.56</td></tr>
+          <tr><td>75 inch</td><td>QLED</td><td class="num">170</td><td class="num">248.2</td><td class="num">$74.46</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Example figures only. Assumes 4 hours of use per day at 30 cents per kWh.</p>
+    </div>
+    <h2>Energy use by screen technology</h2>
+    <figure class="chart">
+      <img src="assets/img/Bar Chart.png">
+      <figcaption>Average labelled energy consumption (kWh/year) by screen technology. Data: Australian Government Energy Rating registry, 30 September 2026. Chart made in KNIME.</figcaption>
+    </figure>
+    <h2>Share of average energy use</h2>
+    <figure class="chart">
+      <img src="assets/img/Pie Chart.png">
+      <figcaption>Each technology's share of the combined average yearly energy use. OLED is the largest slice and LCD the smallest. Chart made in KNIME.</figcaption>
+    </figure>
+    <h2>Scatter plot</h2>
+    <figure class="chart">
+      <img src="assets/img/Scatter Plot.png">
+      <figcaption>Submit_ID by registered brand, from the Energy Rating registry data. Chart made in KNIME.</figcaption>
+    </figure>
+    <h2>Distribution of energy use</h2>
+    <figure class="chart">
+      <img src="assets/img/Histogram.png">
+      <figcaption>How many television models fall into each range of labelled energy consumption (kWh/year). Data: Australian Government Energy Rating registry, 30 September 2026. Chart made in KNIME.</figcaption>
+    </figure>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Phạm Trần Anh Duy</p>
+    <p>Generative AI acknowledgement: this website was created with the assistance of Claude (Anthropic). See the README for details.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Appliance Energy Consumption Website</title>
+  <link rel="icon" href="assets/img/PowerIcon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <nav class="nav-inner" aria-label="Main">
+      <a class="logo" href="index.html">
+        <img src="assets/img/PowerIcon.png">
+        Appliance Energy
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="televisions.html">Televisions</a></li>
+        <li><a href="story.html">The Story</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>How much power do Australian homes use?</h1>
+    <p class="lead">Appliances account for a large share of a typical household electricity bill. This site compares how much energy common appliances use and what that costs.</p>
+    <div class="stats">
+      <div class="stat">
+        <strong>About 18 kWh</strong>
+        Average daily electricity use per Australian home</div>
+      <div class="stat">
+        <strong>About 30 c/kWh</strong>
+        Typical retail electricity price</div>
+      <div class="stat">
+        <strong>Standby</strong>
+        Idle devices still draw power around the clock</div>
+    </div>
+    <section class="panel">
+      <h2 class="first">Where the energy goes</h2>
+      <p>Heating and cooling, hot water, refrigeration, lighting and entertainment make up most household use. Televisions are a good place to start because screen size and technology affect consumption widely.</p>
+      <p><a href="televisions.html">Compare televisions and see the charts</a></p>
+    </section>
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <div class="accordion">
+        <details>
+          <summary>What is a kilowatt-hour (kWh)?</summary>
+          <p>A kilowatt-hour is the energy used by a 1,000 watt appliance running for one hour. It is the unit your electricity bill is based on.</p>
+        </details>
+        <details>
+          <summary>Does standby power matter?</summary>
+          <p>Devices on standby draw a small amount continuously. Across a whole home this can add up over a year.</p>
+        </details>
+        <details>
+          <summary>Where does the data on this site come from?</summary>
+          <p>The television charts use the Australian Government Energy Rating registry data exported on 30 September 2026. Other figures are examples only.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Phạm Trần Anh Duy</p>
+    <p>Generative AI acknowledgement: this website was created with the assistance of Claude (Anthropic). See the README for details.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Story | Appliance Energy Consumption Website</title>
+  <link rel="icon" href="assets/img/PowerIcon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <nav class="nav-inner" aria-label="Main">
+      <a class="logo" href="index.html">
+        <img src="assets/img/PowerIcon.png">
+        Appliance Energy
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="televisions.html">Televisions</a></li>
+        <li><a href="story.html" class="active">The Story</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="story-hero">
+      <h1>Is OLED really the thirstiest TV?</h1>
+      <p class="lead">A first look says yes. A fairer comparison says the screen technology matters far less than the size of the screen.</p>
+    </div>
+
+    <section class="chapter" aria-labelledby="ch1">
+      <div class="text">
+        <p class="chapter-label">Chapter 1: The first impression</p>
+        <h2 id="ch1">OLED looks like the biggest energy user</h2>
+        <p>Averaging every registered television by screen technology gives a clear ranking. OLED sits at the top and older LCD sets at the bottom.</p>
+        <p class="callout"><strong>It is tempting to stop here.</strong> OLED averages about 486 kWh a year, nearly 50% more than LCD at about 334 kWh.</p>
+      </div>
+      <figure class="chart visual">
+        <svg viewBox="0 0 640 320" role="img" aria-label="Average yearly energy use by screen technology" xmlns="http://www.w3.org/2000/svg" font-family="Exo 2, Arial, sans-serif"><line x1="50" x2="620" y1="270.0" y2="270.0" stroke="#1F4568"/><text x="42" y="274.0" fill="#9DB6D1" font-size="12" text-anchor="end">0</text><line x1="50" x2="620" y1="207.5" y2="207.5" stroke="#1F4568"/><text x="42" y="211.5" fill="#9DB6D1" font-size="12" text-anchor="end">150</text><line x1="50" x2="620" y1="145.0" y2="145.0" stroke="#1F4568"/><text x="42" y="149.0" fill="#9DB6D1" font-size="12" text-anchor="end">300</text><line x1="50" x2="620" y1="82.5" y2="82.5" stroke="#1F4568"/><text x="42" y="86.5" fill="#9DB6D1" font-size="12" text-anchor="end">450</text><line x1="50" x2="620" y1="20.0" y2="20.0" stroke="#1F4568"/><text x="42" y="24.0" fill="#9DB6D1" font-size="12" text-anchor="end">600</text><rect x="92.8" y="130.8" width="104.5" height="139.2" fill="#22D3EE" rx="3"/><text x="145.0" y="124.8" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">334</text><text x="145.0" y="292" fill="#9DB6D1" font-size="14" text-anchor="middle">LCD</text><rect x="282.8" y="80.4" width="104.5" height="189.6" fill="#4ADE80" rx="3"/><text x="335.0" y="74.4" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">455</text><text x="335.0" y="292" fill="#9DB6D1" font-size="14" text-anchor="middle">LCD (LED)</text><rect x="472.8" y="67.5" width="104.5" height="202.5" fill="#F59E0B" rx="3"/><text x="525.0" y="61.5" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">486</text><text x="525.0" y="292" fill="#9DB6D1" font-size="14" text-anchor="middle">OLED</text></svg>
+        <figcaption>Average labelled energy consumption (kWh/year) by screen technology, 4,724 television models after duplicates were removed. Data: Australian Government Energy Rating registry, 30 September 2026.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" aria-labelledby="ch2">
+      <div class="text">
+        <p class="chapter-label">Chapter 2: The hidden factor</p>
+        <h2 id="ch2">Bigger screens use far more power</h2>
+        <p>Each dot is one television model. The cloud climbs steadily as screens get larger, from under 100 kWh a year for the smallest sets to well over 1,000 for the biggest.</p>
+        <p class="callout"><strong>Screen size and energy use are strongly linked</strong> (correlation about 0.85 across all 5,036 registry rows). If one technology is mostly sold in large sizes, its average will look high for that reason alone.</p>
+      </div>
+      <figure class="chart visual">
+        <img src="assets/img/Scatter Plot.png" alt="Scatter plot of screen size in inches against labelled energy consumption in kWh per year">
+        <figcaption>Screen size (inches) against labelled energy consumption (kWh/year). Chart made in KNIME.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" aria-labelledby="ch3">
+      <div class="text">
+        <p class="chapter-label">Chapter 3: A fair comparison</p>
+        <h2 id="ch3">Compare like with like</h2>
+        <p>Splitting the televisions into Small, Medium and Large bands puts each technology against others of a similar size.</p>
+        <p class="callout"><strong>Size dominates.</strong> Across all technologies, Large TVs average about 743 kWh a year against about 158 for Small, roughly 4.7 times as much. In the Medium band the three technologies are almost level, between 384 and 406 kWh.</p>
+        <p>The one big gap is Small OLED (233 kWh against 135 for Small LCD), but it rests on only 19 models, so it is not strong evidence.</p>
+      </div>
+      <figure class="chart visual">
+        <svg viewBox="0 0 700 380" role="img" aria-label="Average yearly energy use by screen size band and technology" xmlns="http://www.w3.org/2000/svg" font-family="Exo 2, Arial, sans-serif"><line x1="50" x2="680" y1="310.0" y2="310.0" stroke="#1F4568"/><text x="42" y="314.0" fill="#9DB6D1" font-size="12" text-anchor="end">0</text><line x1="50" x2="680" y1="242.5" y2="242.5" stroke="#1F4568"/><text x="42" y="246.5" fill="#9DB6D1" font-size="12" text-anchor="end">200</text><line x1="50" x2="680" y1="175.0" y2="175.0" stroke="#1F4568"/><text x="42" y="179.0" fill="#9DB6D1" font-size="12" text-anchor="end">400</text><line x1="50" x2="680" y1="107.5" y2="107.5" stroke="#1F4568"/><text x="42" y="111.5" fill="#9DB6D1" font-size="12" text-anchor="end">600</text><line x1="50" x2="680" y1="40.0" y2="40.0" stroke="#1F4568"/><text x="42" y="44.0" fill="#9DB6D1" font-size="12" text-anchor="end">800</text><rect x="79.7" y="264.5" width="46.2" height="45.5" fill="#22D3EE" opacity="1" rx="3"/><text x="102.8" y="258.5" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">135</text><text x="102.8" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=243</text><rect x="131.9" y="255.1" width="46.2" height="54.9" fill="#4ADE80" opacity="1" rx="3"/><text x="155.0" y="249.1" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">163</text><text x="155.0" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=900</text><rect x="184.1" y="231.3" width="46.2" height="78.7" fill="#F59E0B" opacity="0.45" rx="3" stroke="#F59E0B" stroke-dasharray="4 3" stroke-width="2"/><text x="207.2" y="225.3" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">233</text><text x="207.2" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=19</text><text x="155.0" y="350" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">Small</text><rect x="289.7" y="180.3" width="46.2" height="129.7" fill="#22D3EE" opacity="1" rx="3"/><text x="312.8" y="174.3" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">384</text><text x="312.8" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=227</text><rect x="341.9" y="172.8" width="46.2" height="137.2" fill="#4ADE80" opacity="1" rx="3"/><text x="365.0" y="166.8" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">406</text><text x="365.0" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=1750</text><rect x="394.1" y="178.1" width="46.2" height="131.9" fill="#F59E0B" opacity="1" rx="3"/><text x="417.2" y="172.1" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">391</text><text x="417.2" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=198</text><text x="365.0" y="350" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">Medium</text><rect x="499.7" y="88.0" width="46.2" height="222.0" fill="#22D3EE" opacity="1" rx="3"/><text x="522.8" y="82.0" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">658</text><text x="522.8" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=115</text><rect x="551.9" y="55.6" width="46.2" height="254.4" fill="#4ADE80" opacity="1" rx="3"/><text x="575.0" y="49.6" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">754</text><text x="575.0" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=1169</text><rect x="604.1" y="68.3" width="46.2" height="241.7" fill="#F59E0B" opacity="1" rx="3"/><text x="627.2" y="62.3" fill="#E6F1FF" font-size="13" font-weight="700" text-anchor="middle">716</text><text x="627.2" y="324" fill="#9DB6D1" font-size="10" text-anchor="middle">n=103</text><text x="575.0" y="350" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">Large</text><rect x="50" y="8" width="14" height="14" fill="#22D3EE" rx="2"/><text x="70" y="20" fill="#9DB6D1" font-size="13">LCD</text><rect x="160" y="8" width="14" height="14" fill="#4ADE80" rx="2"/><text x="180" y="20" fill="#9DB6D1" font-size="13">LCD (LED)</text><rect x="270" y="8" width="14" height="14" fill="#F59E0B" rx="2"/><text x="290" y="20" fill="#9DB6D1" font-size="13">OLED</text><text x="207" y="190" fill="#F59E0B" font-size="12" font-weight="700" text-anchor="middle">n = 19: use caution</text></svg>
+        <figcaption>Average labelled energy consumption (kWh/year) by size band and technology. The number under each bar is the number of models (n). Size bands were set in KNIME (see the README).</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" aria-labelledby="ch4">
+      <div class="text">
+        <p class="chapter-label">Chapter 4: Efficiency</p>
+        <h2 id="ch4">Star ratings barely separate the technologies</h2>
+        <p>The star rating index measures how efficient a television is, not how much power it uses in total. On that measure the three technologies are close together.</p>
+        <p class="callout"><strong>Average star rating index:</strong> LCD about 5.2, OLED about 5.0 and LCD (LED) about 4.9 on a scale that runs up to roughly 9 in this data.</p>
+      </div>
+      <figure class="chart visual">
+        <svg viewBox="0 0 640 320" role="img" aria-label="Average star rating index by technology" xmlns="http://www.w3.org/2000/svg" font-family="Exo 2, Arial, sans-serif"><line x1="50" x2="620" y1="270.0" y2="270.0" stroke="#1F4568"/><text x="42" y="274.0" fill="#9DB6D1" font-size="12" text-anchor="end">0</text><line x1="50" x2="620" y1="207.5" y2="207.5" stroke="#1F4568"/><text x="42" y="211.5" fill="#9DB6D1" font-size="12" text-anchor="end">2</text><line x1="50" x2="620" y1="145.0" y2="145.0" stroke="#1F4568"/><text x="42" y="149.0" fill="#9DB6D1" font-size="12" text-anchor="end">4</text><line x1="50" x2="620" y1="82.5" y2="82.5" stroke="#1F4568"/><text x="42" y="86.5" fill="#9DB6D1" font-size="12" text-anchor="end">6</text><line x1="50" x2="620" y1="20.0" y2="20.0" stroke="#1F4568"/><text x="42" y="24.0" fill="#9DB6D1" font-size="12" text-anchor="end">8</text><rect x="92.8" y="108.1" width="104.5" height="161.9" fill="#22D3EE" rx="3"/><text x="145.0" y="102.1" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">5.18</text><text x="145.0" y="292" fill="#9DB6D1" font-size="14" text-anchor="middle">LCD</text><rect x="282.8" y="115.3" width="104.5" height="154.7" fill="#4ADE80" rx="3"/><text x="335.0" y="109.3" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">4.95</text><text x="335.0" y="292" fill="#9DB6D1" font-size="14" text-anchor="middle">LCD (LED)</text><rect x="472.8" y="112.8" width="104.5" height="157.2" fill="#F59E0B" rx="3"/><text x="525.0" y="106.8" fill="#E6F1FF" font-size="15" font-weight="700" text-anchor="middle">5.03</text><text x="525.0" y="292" fill="#9DB6D1" font-size="14" text-anchor="middle">OLED</text></svg>
+        <figcaption>Average star rating index by screen technology (higher is more efficient). Same 4,724 models as Chapter 1.</figcaption>
+      </figure>
+    </section>
+
+    <section class="takeaway">
+      <h2 class="first">What this means when buying a TV</h2>
+      <ul>
+        <li>Choose the size you actually need first. It has the biggest effect on the yearly energy bill.</li>
+        <li>Compare star ratings between televisions of the same size, rather than comparing technologies on average power.</li>
+        <li>Do not rule out OLED on energy grounds alone: at similar sizes the averages are close.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2 class="first">About this data</h2>
+      <p>The figures come from the Australian Government Energy Rating registry (exported 30 September 2026). They describe registered models, not televisions sold or used in homes, and the energy values are labelled test figures rather than real household use. Averages can be pulled up by a few very large sets, and the Small OLED group is too small for firm conclusions.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Phạm Trần Anh Duy</p>
+    <p>Generative AI acknowledgement: this website was created with the assistance of Claude (Anthropic). See the README for details.</p>
+  </footer>
+</body>
+</html>
